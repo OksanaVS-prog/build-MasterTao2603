@@ -63,34 +63,54 @@
 
 
     <main class="wrapper home">
-        <section class="swiper swiper-banner" style="--header-height: 200px;">
+        <section class="swiper swiper-banner" style="--header-height: 200px">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url(./assets/img/banner-1.png);">
+                <div class="swiper-slide" style="background-image: url(./assets/img/banner-1.png)">
                     <div class="container">
                         <h1 class="banner-title">Direct CARGO from China</h1>
-                        <h5 class="banner-description">We deliver any cargo from China at a fair price</h5>
-                        <a href="#" class="btn btn-primary btn-lg">Calculate the cost <img src="./assets/img/icon-arrow-left.svg" alt="icon-arrow-left"></a>
+                        <h5 class="banner-description">
+					We deliver any cargo from China at a fair price
+				</h5>
+                        <a href="#calculation" class="btn btn-primary btn-lg"
+					>Calculate the cost
+					<img src="./assets/img/icon-arrow-left.svg" alt="icon-arrow-left"
+				/></a>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background-image: url(./assets/img/banner-2.png);">
+                <div class="swiper-slide" style="background-image: url(./assets/img/banner-2.png)">
                     <div class="container">
                         <h2 class="banner-title">Purchase of goods from Taobao, 1688</h2>
-                        <h5 class="banner-description">Purchase and delivery of goods from Chinese trading platforms</h5>
-                        <a href="#" class="btn btn-primary btn-lg">Calculate the cost <img src="./assets/img/icon-arrow-left.svg" alt="icon-arrow-left"></a>
+                        <h5 class="banner-description">
+					Purchase and delivery of goods from Chinese trading platforms
+				</h5>
+                        <a href="#calculation" class="btn btn-primary btn-lg"
+					>Calculate the cost
+					<img src="./assets/img/icon-arrow-left.svg" alt="icon-arrow-left"
+				/></a>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background-image: url(../assets/img/banner-3.png);">
+                <div class="swiper-slide" style="background-image: url(../assets/img/banner-3.png)">
                     <div class="container">
                         <h2 class="banner-title">Express car delivery</h2>
-                        <h5 class="banner-description">We deliver any cargo from China at a fair price</h5>
-                        <a href="#" class="btn btn-primary btn-lg">Calculate the cost <img src="./assets/img/icon-arrow-left.svg" alt="icon-arrow-left"></a>
+                        <h5 class="banner-description">
+					We deliver any cargo from China at a fair price
+				</h5>
+                        <a href="#calculation" class="btn btn-primary btn-lg"
+					>Calculate the cost
+					<img src="./assets/img/icon-arrow-left.svg" alt="icon-arrow-left"
+				/></a>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background-image: url(./assets/img/banner-4.png);">
+                <div class="swiper-slide" style="background-image: url(./assets/img/banner-4.png)">
                     <div class="container">
                         <h2 class="banner-title">Warehouse rental</h2>
-                        <h5 class="banner-description">We deliver any cargo from China at a fair price</h5>
-                        <a href="#" class="btn btn-primary btn-lg">Calculate the cost <img src="./assets/img/icon-arrow-left.svg" alt="icon-arrow-left"></a>
+                        <h5 class="banner-description">
+					We deliver any cargo from China at a fair price
+				</h5>
+                        <a href="#calculation" class="btn btn-primary btn-lg"
+					>Calculate the cost
+					<img src="./assets/img/icon-arrow-left.svg" alt="icon-arrow-left"
+				/></a>
                     </div>
                 </div>
             </div>
@@ -100,7 +120,8 @@
             </div>
             <div class="swiper-pagination"></div>
         </section>
-        <section class="calculation">
+
+        <section id="calculation" class="calculation">
             <div class="container">
                 <div class="template-title template-title_case-3">
                     <h2>Get a quote for the cost of shipping your cargo</h2>
@@ -118,70 +139,204 @@
                             </div>
                             <div class="input-box">
                                 <label for="cargo-weight">Cargo weight (kg):</label>
-                                <input id="cargo-weight" type="number" placeholder="Enter the weight" inputmode="numeric">
+                                <input id="cargo-weight" type="number" placeholder="Enter the weight" inputmode="numeric" />
                             </div>
                         </div>
                         <div class="form-column">
                             <div class="input-box">
                                 <label for="cargo-cost">Cost of cargo:</label>
-                                <input id="cargo-cost" type="number" placeholder="Enter the cost" inputmode="numeric">
+                                <input id="cargo-cost" type="number" placeholder="Enter the cost" inputmode="numeric" />
                             </div>
                             <div class="input-box">
                                 <label for="cargo-volume">Cargo volume (m3):</label>
-                                <input id="cargo-volume" type="number" placeholder="Enter the volume" inputmode="numeric">
+                                <input id="cargo-volume" type="number" placeholder="Enter the volume" inputmode="numeric" />
                             </div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-column">
                             <div class="input-box">
-                                <input id="insurance" type="checkbox">
+                                <input id="insurance" type="checkbox" />
                                 <label for="insurance">Insurance</label>
                             </div>
                             <div class="input-box">
-                                <input id="customs-clearance" type="checkbox">
+                                <input id="customs-clearance" type="checkbox" />
                                 <label for="customs-clearance">Customs clearance</label>
                             </div>
                         </div>
                         <div class="form-column">
                             <div class="input-box">
                                 <label for="hs-code">HS code:</label>
-                                <input id="hs-code" type="number" placeholder="Enter the code">
+                                <input id="hs-code" type="number" placeholder="Enter the code" />
                             </div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="input-box">
                             <div class="file-name"></div>
-                            <input id="calculation-file" type="file">
+                            <input id="calculation-file" type="file" />
                             <label for="calculation-file">Upload a photo of the product</label>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-primary btn-lg">Next step<img src="./assets/img/icon-arrow-left.svg" alt="icon-arrow-left"></a>
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        Next step<img
+					src="./assets/img/icon-arrow-left.svg"
+					alt="icon-arrow-left"
+				/>
+                    </button>
                 </form>
-                <img src="./assets/img/men-person.png" class="calculation-img" alt="person">
+                <img
+			src="./assets/img/men-person.png"
+			class="calculation-img"
+			alt="person"
+		/>
             </div>
         </section>
 
-        <section class="advantages">
+        <section class="advantages bg-accent">
             <div class="container">
                 <div class="template-title">
                     <h2>Why choose us?</h2>
                 </div>
+                <div id="advantages" class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="advantage">
+                                <div class="advantage__img-box">
+                                    <img src="./assets/img/surface1 adv.svg" class="advantage__img" />
+                                </div>
+                                <h6 class="advantage__title">Customs clearance of cargo</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantage">
+                                <div class="advantage__img-box">
+                                    <img
+								src="./assets/img/check-mark 1 adv.svg"
+								class="advantage__img"
+							/>
+                                </div>
+                                <h6 class="advantage__title">Cargo insurance</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantage">
+                                <div class="advantage__img-box">
+                                    <img
+								src="./assets/img/magnifying-glass 1 adv.svg"
+								class="advantage__img"
+							/>
+                                </div>
+                                <h6 class="advantage__title">Checking goods for defects</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantage">
+                                <div class="advantage__img-box">
+                                    <img
+								src="./assets/img/delivery-truck 1 adv.svg"
+								class="advantage__img"
+							/>
+                                </div>
+                                <h6 class="advantage__title">Delivery to any city in Ukraine</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantage">
+                                <div class="advantage__img-box">
+                                    <img
+								src="./assets/img/speech-bubble 1 adv.svg"
+								class="advantage__img"
+							/>
+                                </div>
+                                <h6 class="advantage__title">Consolidation in warehouse</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantage">
+                                <div class="advantage__img-box">
+                                    <img src="./assets/img/like 1 adv.svg" class="advantage__img" />
+                                </div>
+                                <h6 class="advantage__title">Responsible cargo storage</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantage">
+                                <div class="advantage__img-box">
+                                    <img
+								src="./assets/img/credit-card adv.svg"
+								class="advantage__img"
+							/>
+                                </div>
+                                <h6 class="advantage__title">Assistance with payment for goods</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantage">
+                                <div class="advantage__img-box">
+                                    <img src="./assets/img/stack 1 adv.svg" class="advantage__img" />
+                                </div>
+                                <h6 class="advantage__title">
+							Packaging, repackaging, palletizing of cargo
+						</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </section>
+
         <section class="delivery">
             <div class="container">
                 <div class="template-title">
                     <h2>Options for shipping goods from China</h2>
+                    <div style="display: flex; gap: 48px">
+                        <div class="card">
+                            <img
+						src="../assets/img/delivery 1.png"
+						class="card-img-top"
+						alt="delivery"
+					/>
+                            <div class="card-body">
+                                <h5 class="card-title">Avia</h5>
+                                <ul class="card__options-list">
+                                    <li class="card__options-item">
+                                        <img src="../assets/img/calendar.svg" alt="calendar" />9-15 days
+                                    </li>
+                                    <li class="card__options-item">
+                                        <img src="../assets/img/box.svg" alt="box" />from 5 kg
+                                    </li>
+                                </ul>
+                                <div class="card__price">
+                                    <b>2,5</b>
+                                    <strong>2,5</strong>
+                                </div>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section <section class="services">
-        <div class="container">
-            <div class="template-title">
-                <h2>services</h2>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <div class="template-title">
+                    <h2>services</h2>
+                </div>
             </div>
-        </div>
         </section <section>
         <div class="container">
             <div class="template-title">
