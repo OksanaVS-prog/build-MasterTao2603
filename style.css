@@ -341,6 +341,9 @@ label {
 .nice-select .list {
   margin-bottom: 0;
 }
+.nice-select:after {
+  display: none;
+}
 
 .nice-select-dropdown {
   width: 100%;
@@ -549,7 +552,72 @@ label {
 }
 
 .card {
+  border-radius: 20px;
   background-color: #363a4d;
+  width: 360px;
+  border: none;
+}
+.card__img-box {
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+.card-body {
+  padding: 27px 20px;
+}
+.card-title {
+  font-size: 22px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.card__options-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  padding: 0;
+  margin-bottom: 8px;
+}
+.card__options-item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.card .card__price {
+  margin-bottom: 22px;
+  font-size: 22px;
+  text-align: center;
+}
+.card .card__price span:first-child {
+  color: #a3a3a3;
+}
+.card .card__price strong {
+  font-size: 45px;
+  line-height: 125%;
+}
+.card__btn-row {
+  display: flex;
+  gap: 14px;
+}
+.card__btn-row .btn {
+  width: 50%;
+}
+.card.card_services {
+  position: relative;
+}
+.card.card_services::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%);
+  border-radius: 20px;
+}
+.card.card_services .card-body {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  z-index: 1;
 }
 
 @media (min-width: 992px) {

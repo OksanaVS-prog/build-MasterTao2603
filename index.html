@@ -19,14 +19,18 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="logo" href="index.html">
-    <picture>
-         <source media="(min-width: 992px)" srcset="./assets/img/logo.svg">
-         <img src="./assets/img/logo-mobile.svg" class="img-fluid" alt="logo">
-     </picture>
-     </a>
+				<picture>
+					<source media="(min-width: 992px)" srcset="./assets/img/logo.svg" />
+					<img
+						src="./assets/img/logo-mobile.svg"
+						class="img-fluid"
+						alt="logo"
+					/>
+				</picture>
+			</a>
                 <button class="navbar-toggler hamburger hamburger--spring" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="hamburger-box">
-    <span class="hamburger-inner"></span>
+					<span class="hamburger-inner"></span>
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -47,20 +51,11 @@
                             <a class="nav-link" href="#">Register cargo</a>
                         </li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Submit an application</a>
+                    <a href="#" class="btn btn-primary">submit a request</a>
                 </div>
             </div>
         </nav>
     </header>
-
-
-
-
-
-
-
-
-
 
     <main class="wrapper home">
         <section class="swiper swiper-banner" style="--header-height: 200px">
@@ -291,43 +286,39 @@
             <div class="container">
                 <div class="template-title">
                     <h2>Options for shipping goods from China</h2>
-                    <div style="display: flex; gap: 48px">
-                        <div class="card">
-                            <img
+                </div>
+                <div class="card">
+                    <div class="card__img-box" role="img" aria-label="Description of the overall image">
+                        <img
 						src="./assets/img/delivery 1.png"
 						class="card-img-top"
 						alt="delivery"
 					/>
-                            <div class="card-body">
-                                <h5 class="card-title">Avia</h5>
-                                <ul class="card__options-list">
-                                    <li class="card__options-item">
-                                        <img src="./assets/img/calendar.svg" alt="calendar" />9-15 days
-                                    </li>
-                                    <li class="card__options-item">
-                                        <img src="./assets/img/box.svg" alt="box" />from 5 kg
-                                    </li>
-                                </ul>
-                                <div class="card__price">
-                                    <b>2,5</b>
-                                    <strong>2,5</strong>
-                                </div>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="card-body">
+                            <h5 class="card-title">Avia</h5>
+                            <ul class="card__options-list">
+                                <li class="card__options-item">
+                                    <img src="./assets/img/calendar.svg" alt="calendar" />9-15 days
+                                </li>
+                                <li class="card__options-item">
+                                    <img src="./assets/img/box.svg" alt="box" />from 5 kg
+                                </li>
+                            </ul>
+                            <div class="card__price">
+                                <span>from</span>
+                                <strong>2,5</strong>
+                                <span>$/kg</span>
+                            </div>
+                            <div class="card__btn-row">
+                                <a href="#" class="btn btn-sm btn-primary"
+								>submit a request</a>
+                                <a href="#" class="btn btn-sm btn-secondary">more details</a>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
                 </div>
+
+            </div>
             </div>
         </section>
 
@@ -339,6 +330,51 @@
             </div>
         </section <section>
         <div class="container">
+            <div style="display: flex; gap: 48px">
+                <div class="card">
+                    <div class="card__img-box" role="img" aria-label="Description of the overall image">
+                        <img
+						src="./assets/img/delivery 1.png"
+						class="card-img-top"
+						alt="delivery"
+					/>
+                        <div class="card-body">
+                            <h5 class="card-title">Avia</h5>
+                            <ul class="card__options-list">
+                                <li class="card__options-item">
+                                    <img src="./assets/img/calendar.svg" alt="calendar" />9-15 days
+                                </li>
+                                <li class="card__options-item">
+                                    <img src="./assets/img/box.svg" alt="box" />from 5 kg
+                                </li>
+                            </ul>
+                            <div class="card__price">
+                                <span>from</span>
+                                <strong>2,5</strong>
+                                <span>$/kg</span>
+                            </div>
+                            <div class="card__btn-row">
+                                <a href="#" class="btn btn-sm btn-primary">submit a request</a>
+                                <a href="#" class="btn btn-sm btn-secondary">more details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card_services" style="background-image: url(./assets/img/service.png)">
+                    <div class="card-body">
+                        <h5 class="card-title">Avia</h5>
+                        <p class="card-text">
+                            The company provides a full range of logistics services for the
+                            delivery of goods from China to Ukraine, including consolidated
+                            cargo and full truckloads, Taobao intermediary services, and
+                            China-Ukraine cargo transportation.
+                        </p>
+                        <div class="card__btn-row">
+                            <a href="#" class="btn btn-sm btn-secondary">more details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="template-title">
                 <h2>Ready to collaborate?</h2>
                 <h3>Register cargo</h3>
@@ -350,8 +386,8 @@
         <div class="template-title template-title_case-2">
             <h2>About the company</h2>
         </div>
-
         </section>
+
     </main>
     <footer>
         Footer
