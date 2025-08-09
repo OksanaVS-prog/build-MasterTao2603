@@ -7,7 +7,6 @@ btnBurger.addEventListener("click", () =>
 );
 
 const swiperBanner = new Swiper(".swiper-banner", {
-	// Optional parameters
 	direction: "horizontal",
 	loop: true,
 	spaceBetween: 24,
@@ -64,6 +63,34 @@ const swiperAdvantages = new Swiper("#advantages", {
 			slidesPerView: "auto",
 			slidesPerGroup: advantagesSlideLength,
 			simulateTouch: false,
+			pagination: {
+				enabled: false,
+				el: ".swiper-pagination",
+			},
+		},
+	},
+});
+
+const swiperDelivery = new Swiper("#delivery", {
+	direction: "horizontal",
+	slidesPerView: 1,
+	loop: true,
+	spaceBetween: 30,
+
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+
+	pagination: {
+		clickable: true,
+		el: ".swiper-pagination",
+	},
+
+	breakpoints: {
+		992: {
+			spaceBetween: 30,
+			slidesPerView: 3,
 			pagination: {
 				enabled: false,
 				el: ".swiper-pagination",
