@@ -103,14 +103,12 @@ select {
   display: none;
 }
 
-/* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }
@@ -362,6 +360,13 @@ label {
 .template-carousel {
   position: relative;
 }
+.template-carousel .card {
+  margin: 0 auto;
+}
+.template-carousel .swiper-pagination {
+  position: static;
+  margin-top: 32px;
+}
 
 .swiper-pagination-bullet {
   width: 8px;
@@ -394,6 +399,22 @@ label {
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   top: calc(100% - 59px);
+}
+
+.swiper-arrow-container {
+  --padding: 20px;
+  position: absolute;
+  top: calc(50% - 23px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: calc(1503px + var(--padding) * 2);
+  height: 0;
+  z-index: 1;
+  padding: 0 var(--padding);
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% + 183px);
 }
 
 .logo {
@@ -479,19 +500,6 @@ label {
   display: flex;
   justify-content: space-between;
 }
-.swiper-banner .swiper-button-next,
-.swiper-banner .swiper-button-prev {
-  color: #fff;
-  margin-bottom: 0;
-}
-.swiper-banner .swiper-button-next:hover,
-.swiper-banner .swiper-button-prev:hover {
-  color: #89c249;
-}
-.swiper-banner .swiper-horizontal > .swiper-pagination-bullets,
-.swiper-banner .swiper-pagination-bullets.swiper-pagination-horizontal {
-  top: calc(100% - 59px);
-}
 
 .banner-title {
   font-size: 56px;
@@ -568,6 +576,14 @@ label {
 .advantages-horizontal > .swiper-pagination-bullets,
 .advantages-pagination-bullets.swiper-pagination-horizontal {
   top: calc(100% - 59px);
+}
+
+.card_services {
+  min-height: 482px;
+}
+
+.card .card-title {
+  text-align: left;
 }
 
 .card {

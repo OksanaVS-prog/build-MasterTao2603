@@ -71,30 +71,40 @@ const swiperAdvantages = new Swiper("#advantages", {
 	},
 });
 
-const swiperDelivery = new Swiper("#delivery", {
-	direction: "horizontal",
-	slidesPerView: 1,
-	loop: true,
-	spaceBetween: 30,
+document.querySelectorAll(".template-carousel").forEach((carouselEl, index) => {
+	const swiper = new Swiper(carouselEl.querySelector(".swiper"), {
+		slidesPerView: 1,
+		direction: "horizontal",
+		loop: true,
+		spaceBetween: 30,
 
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
+		navigation: {
+			nextEl: carouselEl.querySelector(".swiper-button-next"),
+			prevEl: carouselEl.querySelector(".swiper-button-prev"),
+		},
 
-	pagination: {
-		clickable: true,
-		el: ".swiper-pagination",
-	},
+		pagination: {
+			el: carouselEl.querySelector(".swiper-pagination"),
+			clickable: true,
+		},
 
-	breakpoints: {
-		992: {
-			spaceBetween: 30,
-			slidesPerView: 3,
-			pagination: {
-				enabled: false,
-				el: ".swiper-pagination",
+		breakpoints: {
+			830: {
+				slidesPerView: 2,
+				spaceBetween: 30,
+				pagination: {
+					enabled: false,
+					el: carouselEl.querySelector(".swiper-pagination"),
+				},
+			},
+			1400: {
+				slidesPerView: 3,
+				spaceBetween: 30,
+				pagination: {
+					enabled: false,
+					el: carouselEl.querySelector(".swiper-pagination"),
+				},
 			},
 		},
-	},
+	});
 });
