@@ -1,27 +1,27 @@
 @font-face {
   font-family: "ProximaNova";
-  src: url("./assets/fonts/ProximaNova-Light.ttf") format("truetype");
+  src: url("assets/fonts/ProximaNova-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "ProximaNova";
-  src: url("./assets/fonts/ProximaNova-Regular.ttf") format("truetype");
+  src: url("assets/fonts/ProximaNova-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "ProximaNova";
-  src: url("./assets/fonts/ProximaNova-Semibold.ttf") format("truetype");
+  src: url("assets/fonts/ProximaNova-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "ProximaNova";
-  src: url("./assets/fonts/ProximaNova-Bold.ttf") format("truetype");
+  src: url("assets/fonts/ProximaNova-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -120,7 +120,7 @@ input[type=checkbox] + label:before {
 
 input[type=checkbox]:checked + label:before {
   content: "";
-  background: url(./assets/img/icon-checked.png) center no-repeat #fff;
+  background: url(assets/img/icon-checked.png) center no-repeat #fff;
 }
 
 input {
