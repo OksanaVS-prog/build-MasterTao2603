@@ -326,7 +326,7 @@ label {
   margin-bottom: 0;
 }
 .nice-select:after {
-  display: none;
+  display: block;
 }
 
 .nice-select-dropdown {
@@ -647,6 +647,26 @@ label {
   z-index: 1;
 }
 
+.delivery .template-title h2:after {
+  background-color: #89c249;
+}
+
+.company .template-title h2:after {
+  background-color: #89c249;
+}
+.company .container {
+  display: flex;
+  gap: 35px;
+}
+.company .container .company-description {
+  max-width: 555px;
+  font-size: 18px;
+  padding-left: 12px;
+}
+.company .container .company-img {
+  width: 100%;
+}
+
 @media (min-width: 992px) {
   .swiper-banner {
     width: calc(100% - 24px);
@@ -781,6 +801,25 @@ label {
     min-width: 218px;
     margin-bottom: 0 auto 40px;
   }
+  .nice-select:after {
+    display: none;
+  }
+  .company .container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .company .container .company-description {
+    width: 100%;
+  }
+  .company .container .template-title h2:after {
+    left: calc(50% - 48px);
+  }
+  .company .container .template-title h2 {
+    text-align: center;
+  }
+  .company .container .company-img {
+    max-width: 450px;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .calculation-form {
@@ -797,6 +836,13 @@ label {
   }
   .form-column {
     width: 100%;
+  }
+  .company .container .company-description {
+    width: 100%;
+    font-size: 16px;
+  }
+  .company .container .company-img {
+    max-width: 326px;
   }
 }
 /*# sourceMappingURL=style.css.map */
