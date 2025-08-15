@@ -677,29 +677,33 @@ label {
 
 .questions__row {
   display: flex;
+  align-items: flex-start;
   gap: 34px;
 }
 
 .questions-form__title {
   font-size: 24px;
   margin-bottom: 8px;
+  font-weight: 700;
 }
 
 .questions-form {
   border-radius: 20px;
   background-color: #363a4d;
   padding: 38px 40px;
-  min-width: 390px;
+  flex: 1 0 390px;
+  align-items: center;
 }
 .questions-form .btn-lg {
   padding: 20px 20px 19px;
+  min-width: 310px;
 }
 .questions-form .btn-lg .arrow-left {
   margin-left: 130px;
 }
-
-.input-box {
+.questions-form .input-box {
   margin-bottom: 14px;
+  width: 310px;
 }
 
 .questions-form__subtitle {
@@ -709,8 +713,8 @@ label {
 }
 
 .questions .accordion {
+  flex: 0 1 100%;
   width: 100%;
-  min-width: 716px;
 }
 .questions .accordion .accordion-item {
   background-color: transparent;
@@ -919,6 +923,20 @@ label {
   .questions__row {
     flex-direction: column;
     align-items: center;
+    gap: 28px;
+  }
+  .questions-form .btn-lg {
+    min-width: 295px;
+    padding: 19px 13px 20px;
+  }
+  .questions-form .input-box {
+    width: 295px;
+  }
+  .questions .accordion .accordion-button {
+    font-size: 16px;
+  }
+  .accordion-body .accordion-description {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 767.98px) {
