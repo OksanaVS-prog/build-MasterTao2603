@@ -669,7 +669,11 @@ label {
 .company .container .company-description {
   max-width: 555px;
   font-size: 18px;
+  align-items: center;
+  justify-content: center;
   padding-left: 12px;
+  line-height: 170%;
+  gap: 10px;
 }
 .company .container .company-img {
   width: 100%;
@@ -755,6 +759,34 @@ label {
   font-weight: 300;
   font-family: "ProximaNova";
   margin: 0;
+  line-height: 145%;
+}
+
+.partnership .template-title h2:after {
+  background-color: #89c249;
+}
+
+.partnership__content {
+  display: flex;
+  gap: 56px;
+  flex-wrap: wrap;
+}
+
+.partnership__content-item {
+  width: calc(50% - 28px);
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 157%;
+}
+.partnership__content-item p {
+  margin-bottom: 50px;
+}
+.partnership__content-item p:last-child {
+  margin-bottom: 0;
+}
+.partnership__content-item img {
+  height: auto;
+  max-width: 100%;
 }
 
 @media (min-width: 992px) {
@@ -945,6 +977,21 @@ label {
   }
   .accordion-body .accordion-description {
     font-size: 14px;
+  }
+  .partnership__content {
+    flex-direction: column;
+  }
+  .partnership__content-item {
+    width: 100%;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: justify;
+  }
+  .partnership__content-item p {
+    margin-bottom: 30px;
+  }
+  .order-mobile-negative {
+    order: -1;
   }
 }
 @media screen and (max-width: 767.98px) {
