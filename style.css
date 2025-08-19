@@ -845,9 +845,14 @@ label {
 }
 
 .footer__brand p {
-  margin-bottom: 8px;
   line-height: 163%;
   font-size: 14px;
+  margin-bottom: 8px;
+}
+.footer__brand a {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 8px;
 }
 
 .footer__logo img {
