@@ -594,8 +594,7 @@ label {
 .card_services {
   min-height: 482px;
 }
-
-.card .card-title {
+.card_services .card-title {
   text-align: left;
 }
 
@@ -609,6 +608,7 @@ label {
   background-color: #363a4d;
   width: 360px;
   border: none;
+  color: #fff;
 }
 .card__img-box {
   border-radius: 20px 20px 0 0;
